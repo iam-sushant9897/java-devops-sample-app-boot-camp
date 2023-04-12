@@ -35,7 +35,7 @@ pipeline {
                 sh 'ls'
                 }
             }
-         stage (Showing scanning results) {
+         stage ('Showing scanning results') {
              steps { 
                 sh '/opt/sonar-scanner/bin/sonar-scanner -Dsonar.projectkey=Shekhar9897_java-devops-sample-app-boot-camp -Dsonar.organization=sonarqubescanner -Dsonar.sources=src/main/java/ -Dsonar.java.binaries=target/classes -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=0e39526b5a7972913bac10d761b2fad101ae393f'
                }
