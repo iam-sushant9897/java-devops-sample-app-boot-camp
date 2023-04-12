@@ -42,7 +42,7 @@ pipeline {
             }
          stage ('Deploying artifact') {
              steps {
-                sh 'export ANSIBLE_HOST_KEY_CHECKING=False && ansible-playbook --private-key=/home/ubuntu/.ssh/vm-instance-key.pem -i host_inventory deploy-artifact.yml '
+                sh 'sudo apt-get update -y '
          }
        }
     }
