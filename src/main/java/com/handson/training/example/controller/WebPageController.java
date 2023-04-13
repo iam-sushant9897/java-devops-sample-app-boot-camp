@@ -98,9 +98,16 @@ public class WebPageController {
             logger.error("there is no content in the service page");
             throw new NullPointerException();
         }
-
-
     }
+
+     public  void validateHTMLServiceNewFun(String htmlService){
+        if(StringUtils.isEmpty(htmlService)){
+            logger.info("service page is running:"+htmlService);
+            logger.error("there is no content in the service page");
+            throw new NullPointerException();
+        }
+    }
+
 
     public String getString(String user, String htmlString) throws UnknownHostException {
         String userName = StringUtils.isEmpty(user) ? "Participant" : user;
