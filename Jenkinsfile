@@ -7,7 +7,7 @@ pipeline {
                  sh 'sudo apt-get install -y wget tree unzip maven'
                 }
             }
-         stage ('Compiling and Running Test cases') {
+         stage ('Compiling and Running Test cases') {bbbbbbbbfff
              steps {
                  sh 'mvn clean'
                  sh 'mvn compile'
@@ -15,7 +15,7 @@ pipeline {
                 }
             }
          stage ('Creating package') {
-             steps {
+             steps {ggggggggggggggggggg
                  sh 'mvn package'
                 }
             }
@@ -36,7 +36,7 @@ pipeline {
                }
             }
          stage ('Deploying artifact') {
-             steps {
+             steps {gggggggggggggggg
                 sh 'sudo apt-get update -y '
          }
        }
